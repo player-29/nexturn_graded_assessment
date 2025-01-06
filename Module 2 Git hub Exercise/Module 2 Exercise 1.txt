@@ -1,0 +1,27 @@
+
+1. Setting Up the Project for Version Control and Pushing to GitHub
+	git init
+	git remote add origin https://github.com/player-29/Sample-Project.git
+	git branch -M main
+	git push -u origin main
+
+2. Creating, Managing a New Branch for README Update
+	git checkout -b feature/update-readme
+	# Sample Project
+	A brief description of the Sample Project.
+	git add README.md
+	git commit -m "Add project introduction to README"
+	git push -u origin feature/update-readme
+
+3. Merging Changes into the Main Branch
+	git checkout main
+	git merge feature/update-readme
+	git push origin main
+
+4. Cleaning Up Unused Branches Locally and Remotely
+	git branch -d feature/update-readme
+	git push origin --delete feature/update-readme
+
+
+
+
